@@ -6,8 +6,7 @@
 #include <iostream>
 #include <fstream>
 
-class FileM
-{
+class FileM {
     private:
         char    buffer[1024];
         std::streamsize bytes;
