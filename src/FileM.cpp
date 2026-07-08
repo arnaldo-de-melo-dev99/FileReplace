@@ -12,7 +12,11 @@ void  shoseToOpenFile(std::string newFile) {
     int op;
     std::cout << "Do you want to open the file? (1 for yes, 0 for no): ";
     std::cin >> op;
-    if (op == 1) system(("xdg-open " + newFile).c_str());
+    if (op == 1){
+      system(("xdg-open " + newFile).c_str());  
+      system(("notepad " + newFile).c_str());  
+      system(("open " + newFile).c_str());  
+    } 
     else std::cout << "File is not opened \n";
 }
 
