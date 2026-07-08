@@ -1,23 +1,12 @@
 #include "FileM.hpp"
 
-void    Bunner(void) {
-    std::cout << "-----------------------------------------------" << std::endl;
-    std::cout << "|                                             |" << std::endl;
-    std::cout << "|          Welcome to File Replace            |" << std::endl;
-    std::cout << "|                                             |" << std::endl;
-    std::cout << "-----------------------------------------------" << std::endl;
-}
-
 int main(void) {
 
     std::string fileName;
     std::string s1;
     std::string s2;
 
-    Bunner();
-    getline(std::cin, fileName);
-    getline(std::cin, s1);
-    getline(std::cin, s2);
+    ReadFileRplace(&fileName, &s1, &s2);
 
     FileM *newFile = new FileM((char *)fileName.c_str());
 
